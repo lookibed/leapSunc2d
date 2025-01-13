@@ -33,7 +33,8 @@ print(json.dumps(visemes_data_with_pauses['visemes'], indent=2, ensure_ascii=Fal
 print("Load viseme images..")
 visemes_dir = r"G:\PythonProjects\leapSunc2d\visemes"
 output_video = r"G:\PythonProjects\leapSunc2d\visemes_animation.mp4"
-target_size = (124, 132)
+# target_size = (124, 132)
+target_size = (487, 857)
 viseme_images = load_viseme_images(visemes_dir, target_size, visemes_data_with_pauses)
 print("Create viseme animation..")
 create_viseme_animation(visemes_data_with_pauses, viseme_images, output_video, 24)
